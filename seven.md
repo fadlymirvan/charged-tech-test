@@ -1,4 +1,4 @@
-```
+```ruby
 articles = Article.joins(:comments)
                 .where("created_at >= ? AND created_at < ?", date1, date2)
                 .where("publish_date >= #{params[:date]}")
